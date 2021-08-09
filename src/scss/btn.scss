@@ -1,0 +1,16 @@
+@mixin btn($w, $h, $bg){
+  width: $w;
+  height: $h;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: $bg;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+}

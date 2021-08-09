@@ -1,0 +1,51 @@
+@import "../libs/Open Sans/stylesheet.css";
+@import "../libs/Banny/style.css";
+@import "../libs/jq/owlcarousel/owl.theme.default.min.css";
+@import "../libs/jq/owlcarousel/owl.carousel.min.css";
+@import "../libs/fancybox/jquery.fancybox.min.css";
+
+@import "btn";
+@import "text";
+@import "header";
+@import "first-screen";
+@import "about";
+@import "chef";
+@import "pancakes";
+@import "form";
+@import "event";
+@import "contact";
+@import "footer";
+@import "carousel";
+@import "menu";
+@import "goToTop";
+@import "media";
+
+*{
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+#map{
+  width: 100%;
+  height: 475px;
+}
+
+.swal-button {
+  background-color: #E8C300;
+}
+.swal-title {
+  color: black;
+}
+.swal-footer{
+  text-align: center;
+}
+.swal-text {
+  font-size: 22px;
+  color: darkgoldenrod;
+}

@@ -1,0 +1,10 @@
+.footer{
+  &__title{
+    @include text(Open Sans, normal, 12px, 12px);
+    height: 100px;
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+}

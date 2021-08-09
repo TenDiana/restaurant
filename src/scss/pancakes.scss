@@ -1,0 +1,126 @@
+.pancakes{
+  background: url("../image/pancakes/specialty's-bg.png") top/cover no-repeat;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-6__2{
+    width: 600px;
+  }
+  &__team{
+    @include text(Open Sans, bold, 12px, 14px);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #FFFFFF;
+    position: relative;
+    &:before{
+      position: absolute;
+      top: 0;
+      left: 214px;
+      content: '';
+      height: 679px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 0;
+    }
+    &:after{
+      position: absolute;
+      top: 0;
+      right: 214px;
+      content: '';
+      height: 679px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 0;
+    }
+  }
+  &__box{
+    margin-left: 122px;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: 43%;
+      transform: translate(-43%, -50%);
+      width: 230px;
+      height: 230px;
+      border: 20px solid #E8C300;
+      filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+      border-radius: 5px;
+      z-index: 2;
+    }
+    &_3{
+      margin: 40px 0 0 135px;
+    }
+  }
+  &__img{
+    border-radius: 5px;
+  }
+  &__title {
+    color: #FFFFFF;
+    @include text(BannyBoldRound, bold, 36px, 48px);
+    margin-top: 117px;
+    text-transform: uppercase;
+    height: 56px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: #E8C300;
+      border-radius: 50px;
+    }
+  }
+  &__sub{
+    @include text(Open Sans, bold, 18px, 28px);
+    margin: 15px 0 20px;
+    color: #FFFFFF;
+  }
+  &__text{
+    @include text(Open Sans, 400, 14px, 24px);
+    color: #FFFFFF;
+  }
+  .hidden{
+    height: 50px;
+    position: relative;
+    color: rgba(255, 255, 255, -0.2);;
+    &:before{
+      position: absolute;
+      content: '';
+      top: -580px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 679px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+    }
+  }
+  .owl-dots {
+    text-align: center;
+    padding-top: 40px;
+
+  }
+
+  .owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    background: #FFFFFF50;
+    margin: 0 20px;
+  }
+
+  .owl-dots button.owl-dot.active {
+    background-color: #FFFFFF;
+  }
+  .owl-dots button.owl-dot:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,94 @@
+.contact{
+  padding: 100px 0 100px;
+  &__title {
+    @include text(BannyBoldRound, bold, 36px, 48px);
+    text-transform: uppercase;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 5px;
+      background: #E8C300;
+      border-radius: 50px;
+    }
+  }
+  &__sub{
+    @include text(Open Sans, bold, 18px, 28px);
+    width: 563px;
+    margin: 30px auto 50px;
+  }
+  &__label{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input{
+    width: 100%;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    @include text(Open Sans, normal, 14px, 19px);
+    padding: 0 20px;
+    text-align: left;
+    color: rgba(51, 51, 51, 0.5);
+    margin-bottom: 10px;
+
+  }
+  &__message{
+    @include text(Open Sans, normal, 14px, 19px);
+    padding: 20px 20px;
+    text-align: left;
+    color: rgba(51, 51, 51, 0.5);
+    width: 100%;
+    height: 120px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    resize: none;
+  }
+  &__form{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn{
+    @include btn(632px, 60px, #E8C300);
+    margin-top: 10px;
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__links{
+    width: 631px;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  &__icon{
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+  }
+  &__link{
+    @include text(Open Sans, 700, 12px, 13px);
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.8);
+    margin-right: 19px;
+    display: flex;
+    align-items: center;
+
+  }
+}

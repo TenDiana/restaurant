@@ -1,0 +1,76 @@
+.form{
+  padding: 100px 0 0;
+  &__row{
+    display: flex;
+    justify-content: center;
+  }
+  .col-6{
+    width: 600px;
+    text-align: center;
+  }
+  &__title{
+    @include text(BannyBoldRound, bold, 36px, 48px);
+    margin-top: 62px;
+    text-transform: uppercase;
+    height: 56px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 5px;
+      background: #E8C300;
+      border-radius: 50px;
+    }
+  }
+  &__info{
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  &__input{
+    @include text(Open Sans, normal, 14px, 19px);
+    padding: 0 20px;
+    text-align: left;
+    color: rgba(51, 51, 51, 0.5);
+    width: 270px;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px 10px 0;
+  }
+  &__box{
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 120%;
+      transform: translate(-124%, -50%);
+      width: 230px;
+      height: 230px;
+      border: 20px solid #E8C300;
+      filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+      border-radius: 5px;
+      z-index: 2;
+    }
+  }
+  &__img{
+    border-radius: 5px;
+  }
+  &__btn{
+    @include btn(560px, 60px, #E8C300);
+    margin-left: -11px;
+  }
+  &__time{
+    @include text(Open Sans, bold, 12px, 12px);
+    text-align: center;
+    line-height: 100px;
+    color: rgba(51, 51, 51, 0.5);
+    height: 100px;
+  }
+}

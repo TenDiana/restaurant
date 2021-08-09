@@ -1,0 +1,70 @@
+.header{
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  .row{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  &__link{
+    height: 100px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  }
+  &__left{
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__right{
+    display: flex;
+    align-content: flex-end;
+  }
+  &__a{
+    @include text(Open Sans, bold, 12px, 18px);
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    &:hover::before{
+      position: absolute;
+      content: " ";
+      width: calc(100% + 70px);
+      text-align: center;
+      border: 1px solid #FFFFFF;
+      top: 57px;
+      transition: 0.5s;
+      left: -35px;
+    }
+  }
+  .burger{
+    display: none;
+  }
+  .burger__btn{
+    width: 60px;
+    height: 80px;
+  }
+  .burger__btn-1{
+    height: 110px;
+  }
+  &__wheel{
+    margin: 25px auto;
+    animation: rotated 6s linear infinite;
+  }
+  @keyframes rotated {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+
+  }
+
+}
+
+

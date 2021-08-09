@@ -1,0 +1,164 @@
+.first-screen {
+  padding: 326px 0 93px;
+  background: url("../image/first-screen/header-bg.png") top/cover no-repeat;
+  position: relative;
+  .row {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    &:before{
+      position: absolute;
+      bottom: -338px;
+      left: 214px;
+      content: '';
+      height: 822px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+    }
+    &:after{
+      position: absolute;
+      bottom: -338px;
+      right: 214px;
+      content: '';
+      height: 822px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+    }
+
+
+  }
+  &__title {
+    @include text(Open Sans, bold, 12px, 14px);
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__name{
+    @include text(BannyBoldRound, bold, 96px, 0);
+    color: #FFFFFF;
+    height: 139px;
+    width: 998px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    &:before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      width: 60px;
+      height: 5px;
+      border-radius: 15px;
+      background: #E8C300;
+      z-index: 2;
+    }
+  }
+
+  &__vertically{
+    transform: rotate(-90deg);
+  }
+  &__text{
+    @include text(Open Sans, bold, 11px, 12px);
+    color: #FFFFFF;
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    animation: puls 3s ease-in-out infinite;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover{
+      background: #1e0f0acf;
+    }
+
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+
+    &-left {
+      @include btn(200px, 60px, #E8C300);
+      &:active{
+        transform: scale(0.95);
+        transition: 0.1s;
+      }
+    }
+
+    &-right {
+      @include btn(200px, 60px, none);
+      margin-left: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      &:active{
+        transform: scale(0.95);
+        transition: 0.1s;
+      }
+    }
+
+  }
+  &__vector{
+    margin-top: 82px;
+    text-align: center;
+    position: relative;
+    &:before{
+      position: absolute;
+      left: 50%;
+      bottom: 98%;
+      content: '';
+      height: 559px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+    }
+    &:after{
+      position: absolute;
+      left: 50%;
+      top: 95%;
+      content: '';
+      height: 97px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+    }
+  }
+
+}
+@keyframes puls {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+  70%{
+    transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1);
+  }
+
+}

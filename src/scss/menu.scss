@@ -1,0 +1,74 @@
+.menu{
+  padding: 100px 0 70px;
+  &__title{
+    @include text(BannyBoldRound, bold, 36px, 48px);
+    text-transform: uppercase;
+    height: 56px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 5px;
+      background: #E8C300;
+      border-radius: 50px;
+    }
+  }
+  &__sub{
+    @include text(Open Sans, bold, 18px, 28px);
+    margin: 15px auto 20px;
+    width: 560px;
+  }
+  &__content {
+    display: none;
+  }
+  &__content_active {
+    display: block;
+  }
+  &__caption{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 51px;
+
+  }
+  &__tab{
+    @include text(Open Sans, bold, 12px, 18px);
+    color: #333333;
+    list-style-type: none;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+      background: #e8c30061;
+    }
+
+    &:last-child{
+      border-right: none;
+    }
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 363px;
+  }
+  &__dish, &__price{
+    @include text(BannyBoldRound, bold, 18px, 18px);
+    color: #333333;
+    text-transform: uppercase;
+  }
+  &__ingredients{
+    @include text(Open Sans, 400, 12px, 18px);
+  }
+
+}

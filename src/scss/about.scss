@@ -1,0 +1,56 @@
+.about{
+  padding: 100px 0 100px;
+  .col-6{
+    width: 600px;
+  }
+  &__row{
+    display: flex;
+  }
+  &__title{
+    @include text(BannyBoldRound, bold, 36px, 48px);
+    margin-top: 117px;
+    text-transform: uppercase;
+    height: 56px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 5px;
+      background: #E8C300;
+      border-radius: 50px;
+    }
+  }
+  &__sub{
+    @include text(Open Sans, bold, 18px, 28px);
+    margin: 15px 0 20px;
+  }
+  &__text{
+    @include text(Open Sans, 400, 14px, 24px);
+  }
+  &__box{
+    margin-left: 80px;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+    position: relative;
+    &:before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 135%;
+    transform: translate(-135%, -50%);
+    width: 230px;
+    height: 230px;
+    border: 20px solid #E8C300;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+    border-radius: 5px;
+    z-index: 2;
+  }
+  }
+  &__box-img{
+    border-radius: 5px;
+    object-fit: contain;
+  }
+}
